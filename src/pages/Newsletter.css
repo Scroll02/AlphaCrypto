@@ -1,0 +1,139 @@
+.subscribe_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 ;
+}
+
+.newsletter-form{
+    width: 900px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px #1d7482;
+    border-radius: 2rem;
+    background: rgb(60, 80, 101);
+    background: linear-gradient(
+    50deg,
+    rgb(52, 104, 126) 20%,
+    rgb(40, 39, 101) 100%
+    );
+}
+
+.newsletter-form > h3{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.envelope-img{
+    height: 30%;
+}
+
+/*Input Fields*/
+.input-name,
+.input-email{
+    font-size: 15px;
+    height: 2.5rem;
+    width: 20rem;
+    margin: 1rem;
+    color: #fff;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #fff;
+}
+.input-name::placeholder{
+    color: #ddd;
+}
+.error-message-name,
+.error-message-email{
+    color: rgb(223, 18, 18);
+    font-size:13px;
+    padding-left: 25px;
+}
+.newsletter-form > .subscribeBtn{
+    font-weight: bolder;
+    font-size: 1rem;
+    height: 3rem;
+    width: 15rem;
+    margin: 2.5rem;
+    border: 2px solid #1d7482;
+    color:#fff;
+    border-radius: 3rem;
+    background-color: #1d7482;
+    cursor: pointer;
+}
+
+.newsletter-form > .subscribeBtn:hover{
+    opacity: 0.7;
+}
+
+.header-name{
+    margin-top: 3rem;
+}
+
+.header-name::after{
+    content: "";
+    height: 10px;
+    width: 300px;
+    background-color: #1d7482;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+
+.testimonials-name{
+    margin-top: 3rem;
+}
+.testimonials-name::after{
+    content: "";
+    height: 10px;
+    width: 130px;
+    background-color: #1d7482;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+
+.feedback-img{
+    height: 400px;
+    width: 400px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 700px){
+    .subscribe_container{
+        margin: 10px 0 ;
+    }
+
+    .newsletter-form{
+    width: 380px;
+    height: 600px;
+    }
+
+    .newsletter-form > h3{
+        font-size: 1rem;
+    }
+
+    .newsletter-form > .subscribeBtn{
+        margin: 1rem;
+    }
+
+    .feedback-img{
+        height: 250px;
+        width: 300px;
+    }
+    .header-name::after{
+        width: 150px;
+    }
+}

@@ -1,0 +1,190 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.container > form{
+    width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 10px #1d7482;
+    border-radius: 2rem;
+    background: rgb(60, 80, 101);
+    background: linear-gradient(
+    50deg,
+    rgb(52, 104, 126) 20%,
+    rgb(40, 39, 101) 100%
+    );
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+.contactUs-title{
+    margin-top: 2rem;
+}
+.contactUs-title:after{
+    content: "";
+    height: 10px;
+    width: 160px;
+    background-color: #1d7482;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+.contactUs-logo{
+    height: 30%;
+    width: 30%;
+    display: flex;
+    margin: auto;
+}
+/*Input Fields*/
+.input-firstName, 
+.input-lastName,
+.input-email,
+.input-mobileNo{
+    color: #fff;
+    width: 330px;
+    height: 50px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #fff;
+}
+.input-firstName::placeholder, 
+.input-lastName::placeholder,
+.input-email::placeholder,
+.input-mobileNo::placeholder{
+    color: #ddd;
+}
+
+.error-message-firstName,
+.error-message-email{
+    color: rgb(223, 18, 18);
+    font-size:13px;
+    padding-left: 10px;
+}
+.error-message-lastName,
+.error-message-mobileNo{
+    color: rgb(223, 18, 18);
+    font-size:13px;
+    padding-left: 30px;
+}
+.input-lastName,
+.input-mobileNo{
+    margin-left: 20px;
+}
+.input-message{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+}
+.input-message::-webkit-scrollbar{
+    width: 1em;
+}
+.input-message::-webkit-scrollbar-thumb{
+    background-color: rgba(194, 194, 194, 0.713);
+}
+.message-header{
+    color: #fff;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+}
+/*Submit Button*/
+.submitBtn{
+    border: none;
+    background: #1d7482;
+    border-radius: 5px;
+    margin-top: 20px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    width: 200px;
+    padding: 0;
+    margin-left: 500px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+.submitBtn:hover{
+    opacity: 0.7;
+}
+/*Our Team Title*/
+.ourTeam > h1::after{
+    content: "";
+    height: 10px;
+    width: 180px;
+    background-color: #1d7482;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+.ourTeam > h3{
+    margin: 1rem;
+    text-align: center;
+}
+.ourTeam > .ourTeamLogo{
+    height: 20%;
+    width: 20%;
+    display: flex;
+    margin: auto;
+}
+
+
+@media (max-width: 720px){
+    .container > form{
+        width: 350px;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .container > form > h1{
+        font-size: 2rem;
+    }
+    .contactUs-logo{
+        height: 90%;
+        width: 90%;
+    }
+    .input-lastName,
+    .input-mobileNo{
+        margin-left: 0;
+    }
+    .error-message-lastName,
+    .error-message-mobileNo{
+        padding-left: 10px;
+    }
+    .input-message{
+        min-width: 300px;
+        max-width: 300px;
+        min-height: 150px;
+        max-height: 150px;
+    }
+    .message-header{
+        width: 300px;
+    }
+    .submitBtn{
+        width: 200px;
+        padding: 0;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .ourTeam > .ourTeamLogo{
+        height: 80%;
+        width: 80%;
+    }
+  
+}

@@ -1,0 +1,26 @@
+.row-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.blog__title{
+    margin-bottom: 3rem;
+}
+.blog__title > .blog-header::after{
+    content: "";
+    height: 10px;
+    width: 230px;
+    background-color: #1d7482;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+
+@media (max-width: 720px){
+    .row-wrapper{
+        display: block;
+    }
+    .blog__title > .blog-header::after{
+        width: 180px; 
+    }
+}
